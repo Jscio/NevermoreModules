@@ -26,11 +26,11 @@ maid:DoCleaning()
 ```
 
 # Available Modules
-- [Maid](https://quenty.github.io/NevermoreEngine/api/Maid)
-- [Signal](https://quenty.github.io/NevermoreEngine/api/GoodSignal)
-- [Promise](https://quenty.github.io/NevermoreEngine/api/Promise)
-- [Deferred](https://quenty.github.io/NevermoreEngine/api/deferred)
-- [EventHandlerUtils](https://quenty.github.io/NevermoreEngine/api/EventHandlerUtils)
+- [maid] = [Maid](https://quenty.github.io/NevermoreEngine/api/Maid)
+- [signal] = [Signal](https://quenty.github.io/NevermoreEngine/api/GoodSignal)
+- [promise] = [Promise](https://quenty.github.io/NevermoreEngine/api/Promise)
+- [deferred] = [deferred](https://quenty.github.io/NevermoreEngine/api/deferred)
+- [event-handler-utils] = [EventHandlerUtils](https://quenty.github.io/NevermoreEngine/api/EventHandlerUtils)
 
 ⚠️: Potentially detected because the module are modifying the workspace
 
