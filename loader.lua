@@ -4,7 +4,7 @@ local loadedModules = getgenv().NVRMR_LOADED or {}
 getgenv().NVRMR_LOADED = loadedModules
 
 local nvmrModulesList = {
-  "promise" = "",
+  "promise" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/promise.lua",
   "maid" = "",
   "signal" = "",
   "deferred" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/deferred.lua"
