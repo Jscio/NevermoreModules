@@ -5,7 +5,7 @@ local nvmrModulesList = {
   "promise" = "",
   "maid" = "",
   "signal" = "",
-  "deferred" = ""
+  "deferred" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/deferred.lua"
 }
 
 local function crequire(moduleName: string)
