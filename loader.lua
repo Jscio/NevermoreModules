@@ -1,3 +1,5 @@
+getgenv().NVRMR = true
+
 local loadedModules = getgenv().NVRMR_LOADED or {}
 getgenv().NVRMR_LOADED = loadedModules
 
@@ -8,16 +10,27 @@ local nvmrModulesList = {
   "deferred" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/deferred.lua"
 }
 
-local function crequire(moduleName: string)
-  if not nvmrModulesList[moduleName] then
-    warn("[NVMR]: The required module not found")
-    return
-  end
-  
-  if loadedModules[moduleName] then
-    return loadedModules[moduleName]
-  end
+if not getgenv().NVRMR_REQUIRE then
+  function getgenv().NVRMR_REQUIRE(moduleName: string)
+      if not nvmrModulesList[moduleName] then
+          warn(string.format("[NVRMR]: Module '%s' not found in the module list", moduleName))
+          return nil
+      end
 
-  local module = loadstring(game:HttpGet(nvmrModulesList[moduleName]))()
-  loadedModules[moduleName] = module
+      if loadedModules[moduleName] then
+          return loadedModules[moduleName]
+      end
+
+      local success, module = pcall(function()
+          return loadstring(game:HttpGet(nvmrModulesList[moduleName]))()
+      end)
+
+      if not success then
+          warn(string.format("[NVRMR]: Failed to load module '%s'. Error: %s", moduleName, module))
+          return nil
+      end
+
+      loadedModules[moduleName] = module
+      return module
+  end
 end
