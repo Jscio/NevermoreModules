@@ -6,7 +6,7 @@ getgenv().NVRMR_LOADED = loadedModules
 local nvmrModulesList = {
   "promise" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/promise.lua",
   "maid" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/maid.lua",
-  "signal" = "",
+  "signal" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/signal.lua",
   "deferred" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/deferred.lua"
 }
 
