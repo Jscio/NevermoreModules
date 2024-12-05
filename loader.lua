@@ -7,7 +7,8 @@ local nvmrModulesList = {
   "promise" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/promise.lua",
   "maid" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/maid.lua",
   "signal" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/signal.lua",
-  "deferred" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/deferred.lua"
+  "deferred" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/deferred.lua",
+  "event-handler-utils" = "https://raw.githubusercontent.com/Jscio/NevermoreModules/main/modules/event-handler-utils.lua"
 }
 
 if not getgenv().NVRMR_REQUIRE then
